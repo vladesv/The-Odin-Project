@@ -1,0 +1,69 @@
+/* Design tokens */
+
+:root {
+    --dark-bg: #1F2937;
+    --hero-main-text: #F9FAF8;
+    --secondary-text: #E5E7EB;
+    --button-bg: #3882F6;
+    --info-header: #1F2937;
+    --quote-bg: #E5E7EB;
+
+    --font-family-main: 'Roboto', sans-serif;
+
+    --hero-title-size: 48px;
+    --info-header-size: 36px;
+    --logo-size: 24px;
+    --secondary-size: 18px;
+
+    --hero-weight: 900;
+    --quote-weight: 300;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family-main);
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+header,
+.hero{
+    background-color: var(--dark-bg);
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style:none;
+    display: flex;
+    gap:16px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    color: var(--secondary-text);
+    font-size: var(--secondary-size);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo{
+    font-size: var(--logo-size);
+    color: var(--hero-main-text)
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 64px;     
+}
